@@ -1,13 +1,15 @@
-<html lang="en" class="translated-ltr"><head>
+<!doctype html>
+<html lang="es">
+<head>
   <meta charset="utf-8">
-  <meta http-equiv="pragma" content="no-cache">
-  <meta http-equiv="expires" content="-1">
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="expires" content="-1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/tailwind.min.css" rel="stylesheet">
   <title>Captive Portal - Hotspot UKK</title>
   <link href="css/materialdesignicons.min.css" rel="stylesheet">
-  <script src="js/alpine.js" defer=""></script>
+  <script src="js/alpine.js" defer></script>
   <script src="js/zxcvbn.js"></script>
 <script>
 
@@ -29,71 +31,75 @@ $(endif)
     }
 </script>
     
-<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.26tY-h6gH9w.L.W.O/am=wA/d=0/rs=AN8SPfpPTNr3cQN8QhzqvQYsNrDu3oHhow/m=el_main_css"></head>
-<body $(if="" advert-pending="=" 'yes')="" onload="openAdvert()" $(endif)="" class="h-screen overflow-hidden flex items-center justify-center bg-gray-900">
+</head>
+<body $(if advert-pending == 'yes') onLoad="openAdvert()" $(endif) class="h-screen overflow-hidden flex items-center justify-center bg-gray-900">
    
     <div class="w-full bg-gray-900 flex items-center justify-center px-20 lg:px-56 py-5">
       <div class="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden">
         <div class="flex w-full">
           <div class="w-full pt-10 px-5 md:px-10">
             <div class="text-center mb-10">
-              <h1 class="font-bold text-3xl text-gray-900"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hotspot UKK</font></font></h1>
-              <h4 class="text-2xl text-gray-500"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">You just logged out</font></font></h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-               
-                    $(if blocked == 'yes') $(elif refresh-timeout) $(endif)                 
-                </font></font><table class="border-collapse w-full items-center my-10">
+              <h1 class="font-bold text-3xl text-gray-900">Hotspot UKK</h1>
+              <h4 class="text-2xl text-gray-500">You just logged out</h4>
+              <table class="border-collapse w-full items-center my-10">
                 <tbody>
                     <tr class="bg-white hover:bg-gray-100 flex table-row flex-row flex-wrap mb-10 lg:mb-0">
-                        <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                          User:
-                        </font></font></td>
-                        <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                          $(username)
-                        </font></font></td>
-                    </tr>
-                    <tr class="bg-white hover:bg-gray-100 flex table-row flex-row flex-wrap mb-10 lg:mb-0">
-                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                        IP adress
-                      </font></font></td>
-                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                        $(ip)
-                      </font></font></td>
-                    </tr>
-                    <tr class="bg-white hover:bg-gray-100 flex table-row flex-row flex-wrap mb-10 lg:mb-0">
-                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                        MAC address
-                      </font></font></td>
-                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                        $(mac)
-                      </font></font></td>
-                    </tr>
-                    <tr class="bg-white hover:bg-gray-100 flex table-row flex-row flex-wrap mb-10 lg:mb-0">
-                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                        Session time
-                      </font></font></td>
-                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                        $(uptime)
-                      </font></font></td>
-                    </tr>
-                    <tr class="bg-white hover:bg-gray-100 flex table-row flex-row flex-wrap mb-10 lg:mb-0">
-                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                        Bytes Up/Down
-                      </font></font></td>
-                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                        $(bytes-in-nice) / $(bytes-out-nice)
-                      </font></font></td>
-                    </tr><tr class="bg-white hover:bg-gray-100 flex table-row flex-row flex-wrap mb-10 lg:mb-0">
-                        <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">State</font></font></td>
                         <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static">
-                            <a href="$(link-advert)" target="hotspot_advert"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Announcement required</font></font></a>
+                          Username:
                         </td>
-                        </tr><tr class="bg-white hover:bg-gray-100 flex table-row flex-row flex-wrap mb-10 lg:mb-0">
-                            <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Status refresh</font></font></td>
-                            <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$(refresh-timeout)</font></font></td>
-                        </tr></tbody>
+                        <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static">
+                          $(username)
+                        </td>
+                    </tr>
+                    <tr class="bg-white hover:bg-gray-100 flex table-row flex-row flex-wrap mb-10 lg:mb-0">
+                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static">
+                        IP Address
+                      </td>
+                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static">
+                        $(ip)
+                      </td>
+                    </tr>
+                    <tr class="bg-white hover:bg-gray-100 flex table-row flex-row flex-wrap mb-10 lg:mb-0">
+                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static">
+                        Mac Address
+                      </td>
+                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static">
+                        $(mac)
+                      </td>
+                    </tr>
+                    <tr class="bg-white hover:bg-gray-100 flex table-row flex-row flex-wrap mb-10 lg:mb-0">
+                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static">
+                        Session Time
+                      </td>
+                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static">
+                        $(uptime)
+                      </td>
+                    </tr>
+                    <tr class="bg-white hover:bg-gray-100 flex table-row flex-row flex-wrap mb-10 lg:mb-0">
+                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static">
+                        Bytes Up / Down
+                      </td>
+                      <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static">
+                        $(bytes-in-nice) / $(bytes-out-nice)
+                      </td>
+                    </tr> 
+                    $(if blocked == 'yes')
+                        <tr class="bg-white hover:bg-gray-100 flex table-row flex-row flex-wrap mb-10 lg:mb-0">
+                        <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static">Estado</td>
+                        <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static">
+                            <a href="$(link-advert)" target="hotspot_advert">Announcement required</a>
+                        </td>
+                        </tr>
+                    $(elif refresh-timeout)
+                        <tr class="bg-white hover:bg-gray-100 flex table-row flex-row flex-wrap mb-10 lg:mb-0">
+                            <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static">Status refresh</td>
+                            <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block table-cell relative lg:static">$(refresh-timeout)</td>
+                        </tr>
+                    $(endif)                 
+                </tbody>
               </table>
-              <form action="$(link-logout)" name="logout" onsubmit="return openLogout()">
-                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><input type="submit" value="Sign off" class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"></font></font>
+              <form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
+                <input type="submit" value="Sign Off" class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">
               </form>
             </div>
           </div>  
@@ -103,9 +109,9 @@ $(endif)
   
     <div class="flex items-end justify-end fixed bottom-0 lg:py-5 mb-0 mr-2 z-10">
       <div>
-        
+      
       </div>
-    </div><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">Original text</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Rate this translation</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Your feedback will be used to help improve Google Translate</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Good translation" aria-label="Good translation" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Poor translation" aria-label="Poor translation" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div>
-  
+    </div>
+  </body>
 
-</body></html>
+</html>
